@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app.entity.User
 import com.example.app.widget.CodeView
 import com.example.core.utils.CacheUtils
 import com.example.core.utils.Utils
+import com.example.core.utils.save
 import com.example.lesson.LessonActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -24,18 +26,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        et_username = findViewById(R.id.et_username)
-        et_password = findViewById(R.id.et_password)
+        et_username = findViewById<EditText>(R.id.et_username).apply { setText(CacheUtils[usernameKey]) }
+        et_password = findViewById<EditText>(R.id.et_password).apply { setText(CacheUtils[passwordKey]) }
         et_code = findViewById(R.id.et_code)
 
-        et_username.setText(CacheUtils.get(usernameKey))
-        et_password.setText(CacheUtils.get(passwordKey))
-
-        val btn_login = findViewById<Button>(R.id.btn_login)
-        val img_code = findViewById<CodeView>(R.id.code_view)
-
-        btn_login.setOnClickListener(this)
-        img_code.setOnClickListener(this)
+        findViewById<Button>(R.id.btn_login).apply { setOnClickListener(this@MainActivity) }
+        findViewById<CodeView>(R.id.code_view).apply { setOnClickListener(this@MainActivity) }
     }
 
     override fun onClick(v: View) {
@@ -52,24 +48,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val user = User(username, password, code)
         if (verify(user)) {
-            CacheUtils.save(usernameKey, username)
-            CacheUtils.save(passwordKey, password)
+            usernameKey.save(username)
+            passwordKey.save(password)
             startActivity(Intent(this, LessonActivity::class.java))
         }
     }
 
     private fun verify(user: User): Boolean {
-        user.username?.let {
-            if (it.length < 4) {
-                Utils.toast("用户名不合法")
-                return false
-            }
+        if (user.username?.length ?: 0 < 4) {
+            Utils.toast("用户名不合法")
+            return false
         }
-        user.password?.let {
-            if (it.length < 4) {
-                Utils.toast("密码不合法")
-                return false
-            }
+        if (user.password?.length ?: 0 < 4) {
+            Utils.toast("密码不合法")
+            return false
         }
         return true
     }
