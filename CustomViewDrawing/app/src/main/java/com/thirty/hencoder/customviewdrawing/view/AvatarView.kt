@@ -5,11 +5,11 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import com.thirty.hencoder.customviewdrawing.R
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 
-private val STROKE_WIDTH = 4F.px
-private val IMAGE_PADDING = 50F.px
-private val IMAGE_WIDTH = 200F.px
+private val STROKE_WIDTH = 4F.dp
+private val IMAGE_PADDING = 50F.dp
+private val IMAGE_WIDTH = 200F.dp
 private val XFERMODE_SRC_IN = PorterDuffXfermode(PorterDuff.Mode.SRC_IN)
 private val XFERMODE_SRC_OVER = PorterDuffXfermode(PorterDuff.Mode.SRC_OVER)
 

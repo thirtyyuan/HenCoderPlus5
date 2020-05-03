@@ -6,13 +6,13 @@ import android.graphics.Paint
 import android.graphics.PointF
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 
 class CircleView(context: Context, attributeSet: AttributeSet? = null) : View(context, attributeSet) {
 
     private val paint = Paint()
 
-    var radius: Float = 30F.px
+    var radius: Float = 30F.dp
         set(value) {
             field = value
             invalidate()

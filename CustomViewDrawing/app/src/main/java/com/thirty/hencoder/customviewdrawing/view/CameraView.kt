@@ -5,10 +5,10 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import com.thirty.hencoder.customviewdrawing.R
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 
-private val IMAGE_SIZE = 200F.px
-private val IMAGE_PADDING = 50F.px
+private val IMAGE_SIZE = 200F.dp
+private val IMAGE_PADDING = 50F.dp
 
 class CameraView(context: Context, attributeSet: AttributeSet? = null) : View(context, attributeSet) {
 

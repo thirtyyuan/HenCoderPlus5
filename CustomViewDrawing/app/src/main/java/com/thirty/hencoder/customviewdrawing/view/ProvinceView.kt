@@ -1,14 +1,13 @@
 package com.thirty.hencoder.customviewdrawing.view
 
-import android.animation.TypeEvaluator
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 
-val PROVINCES = arrayListOf<String>().apply {
+private val PROVINCES = arrayListOf<String>().apply {
     add("河北省")
     add("山西省")
     add("辽宁省")
@@ -40,7 +39,7 @@ val PROVINCES = arrayListOf<String>().apply {
 class ProvinceView(context: Context, attributeSet: AttributeSet? = null) : View(context, attributeSet) {
 
     private val paint: Paint = Paint().apply {
-        textSize = 80F.px
+        textSize = 80F.dp
         textAlign = Paint.Align.CENTER
     }
 

@@ -6,12 +6,12 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 import kotlin.math.cos
 import kotlin.math.sin
 
-private val RADIUS = 150f.px
-private val TRANSLATE_LENGTH = 24f.px
+private val RADIUS = 150f.dp
+private val TRANSLATE_LENGTH = 24f.dp
 private val ANGLES = floatArrayOf(15F, 30F, 45F, 60F, 90F, 120F)
 private val COLORS =
     listOf(Color.BLUE, Color.GREEN, Color.MAGENTA, Color.RED, Color.BLACK, Color.YELLOW)

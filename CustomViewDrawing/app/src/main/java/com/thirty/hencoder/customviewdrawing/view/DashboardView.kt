@@ -4,17 +4,17 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 import kotlin.math.cos
 import kotlin.math.sin
 
 private const val COUNT = 20
 private const val OPEN_ANGLE = 120
-private val RADIUS = 150f.px
-private val POINTER_LENGTH = 120f.px
-private val DASH_LENGTH = 8f.px
-private val DASH_WIDTH = 2f.px
-private val STROKE_WIDTH = 2f.px
+private val RADIUS = 150f.dp
+private val POINTER_LENGTH = 120f.dp
+private val DASH_LENGTH = 8f.dp
+private val DASH_WIDTH = 2f.dp
+private val STROKE_WIDTH = 2f.dp
 
 class DashboardView(context: Context, attrs: AttributeSet? = null) : View(context, attrs) {
 

@@ -6,22 +6,21 @@ import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import com.thirty.hencoder.customviewdrawing.R
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 
 private const val TEXT =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum leo quis leo fermentum, ac consequat odio fermentum. Duis non luctus massa, ut maximus odio. Vivamus lectus turpis, dapibus in arcu eu, tincidunt pretium arcu. Curabitur nunc velit, vulputate sit amet diam in, gravida ullamcorper enim. Etiam nibh mauris, porttitor at ex fringilla, faucibus cursus nulla. Fusce dignissim dui vitae imperdiet iaculis. Nullam sit amet mollis sem. Integer venenatis tempor quam, eget pretium dolor placerat quis. Donec neque odio, elementum vitae tincidunt eu, ullamcorper ac tellus. Nunc dui neque, eleifend vitae lobortis eget, porta vel justo. Pellentesque imperdiet lectus massa. Etiam at ante libero."
 
-private val IMAGE_PADDING = 50F.px
-private val IMAGE_SIZE = 100F.px
+private val IMAGE_PADDING = 50F.dp
+private val IMAGE_SIZE = 100F.dp
 
 class MultiLineTextView(context: Context, attrs: AttributeSet? = null) : View(context, attrs) {
 
     private val paint = Paint()
     private val textPaint = Paint().apply {
-        textSize = 16F.px
+        textSize = 16F.dp
     }
     private val fontMetrics = Paint.FontMetrics()
 

@@ -7,17 +7,17 @@ import android.graphics.Paint
 import android.graphics.Rect
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.px
+import com.thirty.hencoder.customviewdrawing.utils.dp
 
-private val RADIUS = 160F.px
-private val STROKE_WIDTH = 24F.px
+private val RADIUS = 160F.dp
+private val STROKE_WIDTH = 24F.dp
 
 class SportView(context: Context, attrs: AttributeSet? = null) : View(context, attrs) {
 
     private val bounds = Rect()
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val textPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        textSize = 96F.px
+        textSize = 96F.dp
         textAlign = Paint.Align.CENTER
     }
 
