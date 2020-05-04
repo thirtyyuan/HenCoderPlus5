@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.thirty.hencoder.customviewdrawing.view.TagLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.thirty.hencoder.customviewdrawing.view.ProvinceView
-        android:id="@+id/view"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:background="@color/colorAccent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:background="#33ff0000">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3300ff00">
+
+        <com.thirty.hencoder.customviewdrawing.view.MaterialEditTextView
+            android:id="@+id/met"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:useFloatLabel="true" />
+    </FrameLayout>
+</LinearLayout>
