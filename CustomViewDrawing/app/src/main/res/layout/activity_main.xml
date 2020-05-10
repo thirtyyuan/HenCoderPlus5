@@ -4,30 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
+    <com.thirty.hencoder.customviewdrawing.view.CircleSizeView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#33ff0000">
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#3300ff00">
-
-        <com.thirty.hencoder.customviewdrawing.view.MaterialEditTextView
-            android:id="@+id/met"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            app:useFloatLabel="true" />
-    </FrameLayout>
+        android:background="@color/colorAccent" />
 </LinearLayout>
