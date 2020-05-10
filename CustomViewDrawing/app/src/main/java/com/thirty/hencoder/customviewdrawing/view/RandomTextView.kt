@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 import kotlin.random.Random
 
 private val PROVINCES = arrayListOf<String>().apply {

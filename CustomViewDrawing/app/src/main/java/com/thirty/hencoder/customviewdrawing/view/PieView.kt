@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 import kotlin.math.cos
 import kotlin.math.sin
 

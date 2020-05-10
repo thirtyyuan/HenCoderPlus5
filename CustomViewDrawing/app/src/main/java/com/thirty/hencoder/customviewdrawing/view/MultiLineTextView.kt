@@ -8,7 +8,7 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 import com.thirty.hencoder.customviewdrawing.R
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 
 private const val TEXT =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum leo quis leo fermentum, ac consequat odio fermentum. Duis non luctus massa, ut maximus odio. Vivamus lectus turpis, dapibus in arcu eu, tincidunt pretium arcu. Curabitur nunc velit, vulputate sit amet diam in, gravida ullamcorper enim. Etiam nibh mauris, porttitor at ex fringilla, faucibus cursus nulla. Fusce dignissim dui vitae imperdiet iaculis. Nullam sit amet mollis sem. Integer venenatis tempor quam, eget pretium dolor placerat quis. Donec neque odio, elementum vitae tincidunt eu, ullamcorper ac tellus. Nunc dui neque, eleifend vitae lobortis eget, porta vel justo. Pellentesque imperdiet lectus massa. Etiam at ante libero."

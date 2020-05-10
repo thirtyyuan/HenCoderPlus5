@@ -1,7 +1,8 @@
-package com.thirty.hencoder.customviewdrawing
+package com.thirty.hencoder
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.thirty.hencoder.customviewdrawing.R
 
 class MainActivity : AppCompatActivity() {
 

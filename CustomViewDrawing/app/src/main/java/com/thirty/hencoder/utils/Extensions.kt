@@ -1,4 +1,4 @@
-package com.thirty.hencoder.customviewdrawing.utils
+package com.thirty.hencoder.utils
 
 import android.content.res.Resources
 import android.util.TypedValue

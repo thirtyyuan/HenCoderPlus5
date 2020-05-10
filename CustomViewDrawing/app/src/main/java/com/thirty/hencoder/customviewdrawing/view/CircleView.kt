@@ -6,7 +6,7 @@ import android.graphics.Paint
 import android.graphics.PointF
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 
 class CircleView(context: Context, attributeSet: AttributeSet? = null) : View(context, attributeSet) {
 

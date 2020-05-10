@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 import androidx.appcompat.widget.AppCompatImageView
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 
 class CircleSizeView(context: Context?, attrs: AttributeSet?) : AppCompatImageView(context, attrs) {
 

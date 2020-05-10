@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.graphics.Rect
 import android.util.AttributeSet
 import android.view.View
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 
 private val RADIUS = 160F.dp
 private val STROKE_WIDTH = 24F.dp

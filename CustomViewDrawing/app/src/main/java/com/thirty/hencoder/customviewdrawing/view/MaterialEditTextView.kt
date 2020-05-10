@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatEditText
 import com.thirty.hencoder.customviewdrawing.R
-import com.thirty.hencoder.customviewdrawing.utils.dp
+import com.thirty.hencoder.utils.dp
 
 private val TEXT_SIZE = 12.dp
 private val TEXT_MARGIN = 8.dp
