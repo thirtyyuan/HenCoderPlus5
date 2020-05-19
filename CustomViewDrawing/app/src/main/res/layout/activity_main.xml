@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.thirty.hencoder.touch.MultiTouchView1 xmlns:android="http://schemas.android.com/apk/res/android"
+<com.thirty.hencoder.touch.TouchViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.thirty.hencoder.MainActivity">
 
-</com.thirty.hencoder.touch.MultiTouchView1>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF0000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FF00" />
+</com.thirty.hencoder.touch.TouchViewGroup>
